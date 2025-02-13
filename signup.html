@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+  
+    <video autoplay muted loop class="video-background">
+        <source src="assets/videos/background.mp4" type="video/mp4">
+    </video>
+
+    <div class="header-container">
+        <h1>Sign up to Coffee Finder</h1>
+        <p>Find the best coffee spots near you!</p>
+    </div>
+
+    <div class="form-container">
+        <form id="registerForm">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <p id="responseMessage"></p>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

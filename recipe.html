@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Recipes</title>
+    <link rel="stylesheet" href="assets/css/recipe.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<section class="bg">
+<header>
+    
+            <h1 class="logo">Coffee||Finder</h1>
+
+            <nav>
+                <!-- Login Button -->
+                <div class="login-btn">
+                        <a href="index.html" >Log Out</a>
+                </div>
+            </nav>
+
+        </header>
+
+<!-- Search Bar -->
+<div class="search-container">
+    <input type="text" id="search-box" placeholder="Search for a coffee..." onkeyup="searchRecipe()">
+</div>
+
+<!-- Recipe Cards -->
+<div class="recipe-container" id="recipe-list"></div>
+
+<!-- Recipe Modal -->
+<div id="recipeModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="recipe-title"></h2>
+        <img id="recipe-image" src="" alt="Coffee Image">
+        <h3>Ingredients</h3>
+        <p id="recipe-ingredients"></p>
+        <h3>Instructions</h3>
+        <p id="recipe-instructions"></p>
+    </div>
+</div>
+
+<section id="testimonials">
+    <h2>Customer Testimonials</h2>
+    <div id="testimonial-container">
+        <!-- Testimonials will be loaded here via JavaScript -->
+    </div>
+
+    <form id="testimonial-form">
+        <h3>Leave a Review</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="message" placeholder="Your Testimonial" required></textarea>
+        <label for="rating">Rating:</label>
+        <select id="rating" required>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Coffee||Finder</h2>
+            <p>Find the best coffee recipes for you.</p>
+        </div>
+        
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Coffee Finder. All rights reserved. | Designed with ☕ & ❤️ by <span class="designer">Saadhi Prarthana</span></p>
+    </div>
+</footer>
+
+<script src="assets/js/recipe.js"></script>
+</section>
+</body>
+</html>
