@@ -1,7 +1,6 @@
 # coffee-finder
 
-# Coffee Finder is a modern and visually appealing web application that helps users discover and explore various coffee recipes. 
-# The project features an elegant UI with smooth animations and an engaging user experience.
+ Coffee Finder is a modern and visually appealing web application that helps users discover and explore various coffee recipes.The project features an elegant UI with smooth animations and an engaging user experience.
 
 # Technologies Used 🛠️
 ---
