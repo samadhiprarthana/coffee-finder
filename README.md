@@ -16,7 +16,10 @@ Responsive Design: Optimized for both desktop and mobile users.
 # 🚀 Technologies Used
 ---
 Frontend: HTML, CSS, JavaScript
+
 Backend: PHP, MariaDB
+
 Database: MariaDB for storing coffee recipes and user testimonials
+
 Version Control: Git & GitHub
  
