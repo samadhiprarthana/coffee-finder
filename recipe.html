@@ -44,26 +44,11 @@
     </div>
 </div>
 
-<section id="testimonials">
-    <h2>Customer Testimonials</h2>
-    <div id="testimonial-container">
-        <!-- Testimonials will be loaded here via JavaScript -->
-    </div>
-
-    <form id="testimonial-form">
-        <h3>Leave a Review</h3>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <textarea id="message" placeholder="Your Testimonial" required></textarea>
-        <label for="rating">Rating:</label>
-        <select id="rating" required>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="1">⭐</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
+<!-- Testimonial Section -->
+<section id="testimonial-section">
+    <h2>Would you like to share your experience with us?</h2>
+    <p>We’d love to hear your thoughts! Share your testimonial with us.</p>
+    <button class="test-btn" onclick="navigateToTestimonial()">Add Your Testimonial</button>
 </section>
 
 <footer>
@@ -96,6 +81,11 @@
         <p>&copy; 2025 Coffee Finder. All rights reserved. | Designed with ☕ & ❤️ by <span class="designer">Saadhi Prarthana</span></p>
     </div>
 </footer>
+<script>
+    function navigateToTestimonial() {
+        window.location.href = "testimonial.html";
+    }
+</script>
 
 <script src="assets/js/recipe.js"></script>
 </section>

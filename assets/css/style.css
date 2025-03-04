@@ -20,6 +20,7 @@ header {
 }
 
 .logo {
+    cursor: pointer;
     font-size: 24px;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(77, 40, 17, 0.2);

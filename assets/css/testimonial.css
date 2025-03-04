@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/coffee-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.centered-heading {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+
+
+/* Testimonial Section */
+#testimonial-section {
+   
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 60px auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #ff6600;
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea, select {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #3e2723;
+    color: white;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background:  #ff6600;
+    color: #160c09;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #8D6E63;
+    color: white;
+}
+
+/* Testimonials Display */
+#testimonials {
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 22px;
+    color:  #ff6600;
+}
+
+.testimonial-card {
+    background: #3e2723;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.testimonial-card span {
+    display: block;
+    font-size: 14px;
+    color: #ff6600;
+    margin-top: 10px;
+}
+/* Centered Testimonials Display */
+#testimonials-container2 {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    margin-top: 40px;
+  
+}
+
+.testimonial {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px  #ff6600;;
+    color: white;
+    max-width: 300px; 
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.testimonial p:first-child {
+    font-weight: bold;
+    color: #ff6600; /* Rating color */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Testimonials</title>
+    <link rel="stylesheet" href="assets/css/testimonial.css">
+</head>
+<body>
+
+    <header>
+        <h1>Customer Testimonials</h1>
+        <button onclick="goBack()" class="back-btn">← Back</button>
+    </header>
+
+    <section id="testimonial-section">
+        <div class="container">
+            <h2>Leave a Review</h2>
+            <p>Share your experience with us!</p>
+
+            <form id="testimonial-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="message" placeholder="Your Testimonial" required></textarea>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+
+            <div id="testimonials">
+                <h3>What Our Customers Say</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/testimonial.js"></script>
+
+</body>
+</html>
