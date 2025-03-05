@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const testimonialsContainer = document.getElementById("testimonial-container");
     const form = document.getElementById("testimonial-form");
     let testimonials = [];
+    let currentIndex = 0;
 
     // Fetch and display testimonials from the database
     async function fetchTestimonials() {
@@ -21,11 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Display all testimonials dynamically
+    // Display only three testimonials at a time and cycle through them
     function displayTestimonials() {
         testimonialsContainer.innerHTML = ""; // Clear previous testimonials
+        let displayedTestimonials = testimonials.slice(currentIndex, currentIndex + 3);
 
-        testimonials.forEach((testimonial) => {
+        // If not enough testimonials at the end, loop back
+        if (displayedTestimonials.length < 3) {
+            displayedTestimonials = [
+                ...displayedTestimonials,
+                ...testimonials.slice(0, 3 - displayedTestimonials.length)
+            ];
+        }
+
+        displayedTestimonials.forEach((testimonial) => {
             const testimonialElement = `
                 <div class="testimonial">
                     <p>Rating: ${"⭐".repeat(testimonial.rating)}</p>
@@ -36,6 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
             testimonialsContainer.innerHTML += testimonialElement;
         });
     }
+
+    // Cycle through testimonials every 3 seconds
+    function cycleTestimonials() {
+        if (testimonials.length > 3) {
+            currentIndex = (currentIndex + 3) % testimonials.length;
+            displayTestimonials();
+        }
+    }
+
+    setInterval(cycleTestimonials, 3000); // Change every 3 seconds
 
     // Submit new testimonial and refresh the list
     form?.addEventListener("submit", async function (e) {

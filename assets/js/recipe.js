@@ -69,19 +69,21 @@ recipes.forEach(recipe => {
     recipeContainer.appendChild(card);
 });
 
-// Open Modal without Image
+// Open Modal with Image
 function openModal(title, image, ingredients, instructions) {
     document.getElementById("recipe-title").innerText = title;
+
+    let recipeImage = document.getElementById("recipe-image");
+    recipeImage.src = image;
+    recipeImage.style.display = "block";
+
     document.getElementById("recipe-ingredients").innerText = ingredients;
     document.getElementById("recipe-instructions").innerText = instructions;
 
-    // Hide the image or remove its src
-    let recipeImage = document.getElementById("recipe-image");
-    recipeImage.style.display = "none"; // Hide the image
-    recipeImage.src = ""; // Remove the image source
-
     document.getElementById("recipeModal").style.display = "flex";
 }
+
+
 
 
 // Close Modal

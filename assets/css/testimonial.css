@@ -8,39 +8,36 @@ body {
     text-align: center;
 }
 
-
-
+/* Centered Heading */
 .centered-heading {
     text-align: center;
-    font-size: 22px;
-    margin-top: 10px;
+    font-size: 24px;
+    margin-top: 15px;
+    color: #ffcc80;
 }
-
-
-
 
 /* Testimonial Section */
 #testimonial-section {
-   
     background: rgba(0, 0, 0, 0.8);
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 12px;
     width: 80%;
+    max-width: 600px;
     margin: 60px auto;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
 }
 
 h2 {
-    color: #ff6600;
-    font-size: 26px;
+    color: #ff9900;
+    font-size: 28px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-/* Form Styles */
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -49,72 +46,47 @@ form {
 }
 
 input, textarea, select {
-    width: 80%;
-    padding: 12px;
+    width: 90%;
+    max-width: 500px;
+    padding: 14px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     background: #3e2723;
     color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #ff9900;
 }
 
 textarea {
-    height: 100px;
+    height: 120px;
+    resize: none;
 }
 
+/* Submit Button */
 .submit-btn {
-    background:  #ff6600;
-    color: #160c09;
-    font-size: 16px;
-    padding: 12px 20px;
+    background: #ff9900;
+    color: #3e2723;
+    font-size: 18px;
+    padding: 12px 25px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .submit-btn:hover {
-    background: #8D6E63;
+    background: #d97706;
     color: white;
-}
-
-/* Testimonials Display */
-#testimonials {
-    margin-top: 40px;
-}
-
-h3 {
-    font-size: 22px;
-    color:  #ff6600;
-}
-
-.testimonial-card {
-    background: #3e2723;
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 10px;
-    width: 70%;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-}
-
-.testimonial-card:hover {
     transform: scale(1.05);
 }
 
-.testimonial-card p {
-    font-size: 16px;
-    color: #fff;
-}
-
-.testimonial-card span {
-    display: block;
-    font-size: 14px;
-    color: #ff6600;
-    margin-top: 10px;
-}
-/* Centered Testimonials Display */
+/* Testimonials Display */
 #testimonials-container2 {
     display: flex;
     justify-content: center; 
@@ -122,19 +94,18 @@ h3 {
     flex-wrap: wrap; 
     padding: 20px;
     margin-top: 40px;
-  
 }
 
 .testimonial {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px  #ff6600;;
+    box-shadow: 0 4px 10px rgba(255, 153, 0, 0.5);
     color: white;
     max-width: 300px; 
     width: 100%;
     text-align: center;
-    transition: transform 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .testimonial:hover {
@@ -148,5 +119,7 @@ h3 {
 
 .testimonial p:first-child {
     font-weight: bold;
-    color: #ff6600; /* Rating color */
+    color: #ff9900; /* Rating color */
 }
+
+

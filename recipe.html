@@ -6,20 +6,21 @@
     <title>Coffee Recipes</title>
     <link rel="stylesheet" href="assets/css/recipe.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <section class="bg">
 <header>
     
-            <h1 class="logo">Coffee||Finder</h1>
+           <h1 class="logo" onclick="navigateToHome()">Coffee||Finder</h1>
 
-            <nav>
-                <!-- Login Button -->
-                <div class="login-btn">
-                        <a href="index.html" >Log Out</a>
-                </div>
-            </nav>
+           <nav>
+            <!-- LogOUT Button -->
+            <div class="login-btn">
+                    <a href="index.html" >Log Out</a>
+            </div>
+        </nav>
 
         </header>
 
@@ -43,6 +44,7 @@
         <p id="recipe-instructions"></p>
     </div>
 </div>
+
 
 <!-- Testimonial Section -->
 <section id="testimonial-section">
@@ -85,6 +87,14 @@
     function navigateToTestimonial() {
         window.location.href = "testimonial.html";
     }
+
+   
+        function navigateToHome() {
+            window.location.href = "index.html";
+        }
+
+        
+   
 </script>
 
 <script src="assets/js/recipe.js"></script>
