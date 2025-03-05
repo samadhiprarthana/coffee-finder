@@ -1,14 +1,25 @@
 # coffee-finder
 
- Coffee Finder is a modern and visually appealing web application that helps users discover and explore various coffee recipes.The project features an elegant UI with smooth animations and an engaging user experience.
+Coffee Finder is a modern and visually appealing web application that helps users discover and explore various coffee recipes. The project features an elegant UI with smooth animations and an engaging user experience.
 
-# Technologies Used 🛠️
+
+# 🌟 Features
 ---
-HTML5 - For structuring the web pages
+Discover Coffee Recipes: Explore a wide range of coffee recipes with step-by-step instructions.
 
-CSS3 - For styling and animations
+User Testimonials: Read and submit testimonials to share your coffee experiences.
 
-JavaScript (Optional) - For added interactivity
+Interactive UI: Smooth animations and a clean design for an enhanced user experience.
 
-Font Awesome - For social media icons
+Responsive Design: Optimized for both desktop and mobile users.
+
+# 🚀 Technologies Used
+---
+Frontend: HTML, CSS, JavaScript
+
+Backend: PHP, MariaDB
+
+Database: MariaDB for storing coffee recipes and user testimonials
+
+Version Control: Git & GitHub
  
